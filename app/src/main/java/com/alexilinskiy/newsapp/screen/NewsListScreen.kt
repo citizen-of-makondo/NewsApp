@@ -8,14 +8,13 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import androidx.hilt.navigation.compose.hiltViewModel
 import com.alexilinskiy.newsapp.data.NewsItem
 import com.alexilinskiy.newsapp.viewmodel.MainViewModel
+import org.koin.androidx.compose.getViewModel
 
 @Composable
-fun NewsListScreen(
-    viewModel: MainViewModel = hiltViewModel()
-) {
+fun NewsListScreen() {
+    val viewModel = getViewModel<MainViewModel>()
     val state = viewModel.state.value
     Box(modifier = Modifier.fillMaxSize()) {
         LazyColumn(modifier = Modifier.fillMaxSize()) {

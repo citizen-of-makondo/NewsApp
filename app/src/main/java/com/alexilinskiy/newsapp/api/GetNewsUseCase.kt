@@ -3,10 +3,10 @@ package com.alexilinskiy.newsapp.api
 import com.alexilinskiy.newsapp.api.repositoriy.NewsRepository
 import com.alexilinskiy.newsapp.common.Resource
 import com.alexilinskiy.newsapp.data.Results
-import kotlinx.coroutines.flow.*
-import javax.inject.Inject
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flow
 
-class GetNewsUseCase @Inject constructor(
+class GetNewsUseCase (
     private val repository: NewsRepository
 ) {
 

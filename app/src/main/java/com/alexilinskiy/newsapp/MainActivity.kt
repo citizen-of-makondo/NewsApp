@@ -9,9 +9,7 @@ import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
 import com.alexilinskiy.newsapp.screen.NewsListScreen
 import com.alexilinskiy.newsapp.ui.theme.NewsAppTheme
-import dagger.hilt.android.AndroidEntryPoint
 
-@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

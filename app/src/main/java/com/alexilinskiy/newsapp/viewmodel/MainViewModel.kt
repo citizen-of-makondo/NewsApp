@@ -5,17 +5,13 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.alexilinskiy.newsapp.api.GetNewsUseCase
-import com.alexilinskiy.newsapp.api.NewsApi
 import com.alexilinskiy.newsapp.common.Constants
 import com.alexilinskiy.newsapp.common.Resource
 import com.alexilinskiy.newsapp.data.NewsState
-import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
-import javax.inject.Inject
 
-@HiltViewModel
-class MainViewModel @Inject constructor(
+class MainViewModel (
     private val getNewsUseCase: GetNewsUseCase
 ) : ViewModel() {
 
