@@ -57,6 +57,8 @@ dependencies {
     implementation "androidx.compose.ui:ui-tooling-preview:$compose_version"
     implementation "androidx.activity:activity-compose:1.6.0-alpha01"
 
+    implementation "androidx.navigation:navigation-compose:$nav_version"
+
     // Network
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
@@ -76,6 +78,7 @@ dependencies {
     implementation "io.insert-koin:koin-androidx-compose:$koin_version"
 
     // Pictures
+    implementation "com.github.skydoves:landscapist-glide:1.5.1"
 
     // Crashlytics
     // TODO: Add crashlytics firebase library
